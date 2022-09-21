@@ -1,3 +1,4 @@
+PImage img;
 int startX = 101;
 int startY = 356;
 int endX = 0;
