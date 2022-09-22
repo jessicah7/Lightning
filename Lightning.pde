@@ -1,3 +1,5 @@
+PImage volde;
+PImage wand;
 int startX = 101;
 int startY = 356;
 int endX = 0;
@@ -10,12 +12,14 @@ int total = 0;
 void setup() {
   size(500,500);
   background(182, 197, 195);
-  image(loadImage("wand.png"), 0, 350, (int)(width/4), (int)(height/4));
-  image(loadImage("volde.png"), 350, 40, (int)(width/4), (int)(height/4));
+  wand = loadImage("wand.png");
+  volde = loadImage("volde.png");
+  image(wand, 0, 350, (int)(width/4), (int)(height/4));
   frameRate(10);
 }
 
 void draw() {
+  drawVolde();
   stroke(255, 255, 255);
   while(segment < 4) {
     randomX = (int)(Math.random()*100);
@@ -32,9 +36,13 @@ void draw() {
     segment = segment + 1;
   }
   total = total + 1;
-  image(loadImage("volde.png"), 350, 40, (int)(width/4), (int)(height/4));
+  drawVolde();
   noStroke();
   fill(0,0,0);
+}
+
+void drawVolde() {
+  image(volde, 350, 40, (int)(width/4), (int)(height/4));
 }
 
 void mousePressed() {
