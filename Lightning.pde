@@ -10,8 +10,8 @@ int total = 0;
 void setup() {
   size(500,500);
   background(182, 197, 195);
-  image(loadImage("wand.png"), 0, 350, width/4, height/4);
-  image(loadImage("volde.png"), 350, 40, width/4, height/4);
+  image(loadImage("wand.png"), 0, 350, (int)(width/4), (int)(height/4));
+  image(loadImage("volde.png"), 350, 40, (int)(width/4), (int)(height/4));
   frameRate(10);
 }
 
@@ -32,7 +32,7 @@ void draw() {
     segment = segment + 1;
   }
   total = total + 1;
-  image(loadImage("volde.png"), 350, 40, width/4, height/4);
+  image(loadImage("volde.png"), 350, 40, (int)(width/4), (int)(height/4));
   noStroke();
   fill(0,0,0);
 }
