@@ -46,7 +46,6 @@ void drawVolde() {
 }
 
 void mousePressed() {
-  System.out.println(total);
   startX = 101;
   startY = 356;
   endX = 101;
