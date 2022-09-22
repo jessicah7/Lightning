@@ -6,7 +6,6 @@ int randomX;
 int randomY;
 int segment = 0;
 int total = 0;
-int diameter = 0;
 
 void setup() {
   size(500,500);
@@ -36,13 +35,6 @@ void draw() {
   image(loadImage("volde.png"), 350, 40, width/4, height/4);
   noStroke();
   fill(0,0,0);
-  if (total > 29) {
-    ellipse(400, 100, diameter, diameter);
-    diameter = diameter + 20;
-    if (diameter > 380) {
-      background(0,0,0);
-    }
-  }
 }
 
 void mousePressed() {
