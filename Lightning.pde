@@ -52,4 +52,5 @@ void mousePressed() {
   endX = 101;
   endY = 356;
   segment = 0;
+  redraw();
 }
