@@ -14,7 +14,6 @@ void setup() {
   background(182, 197, 195);
   wand = loadImage("wand.png");
   volde = loadImage("volde.png");
-  image(wand, 0, 350, (int)(width/4), (int)(height/4));
   frameRate(10);
 }
 
@@ -42,6 +41,7 @@ void draw() {
 }
 
 void drawVolde() {
+  image(wand, 0, 350, (int)(width/4), (int)(height/4));
   image(volde, 350, 40, (int)(width/4), (int)(height/4));
 }
 
